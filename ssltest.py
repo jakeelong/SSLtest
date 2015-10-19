@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #Author Prajwal Panchmahalkar
-inspired by "TrullJ"
+#inspired by "TrullJ"
+#usage python ssltest.py www.google.com
 
 import requests
 import time
