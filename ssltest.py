@@ -44,7 +44,7 @@ def main():
 		print "[!] Usage eg., python sslgrade.py www.google.com"
 		sys.exit(0)
 	else:
-			scanHost(sys.argv[1])
+		scanHost(sys.argv[1])
 
 if __name__ == "__main__":
 	main()
