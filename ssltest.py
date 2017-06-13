@@ -22,7 +22,7 @@ def scanHost(host):
     payload = {'host': host, 'publish': 'off', 'startNew': 'off', 'all': 'done', 'ignoreMismatch': 'on'}
     results = sendReq(payload)
     payload.pop('startNew')
-    interesting_tests = ['poodle', 'poodleTls', 'supportsRc4', 'vulnBeast', 'logjam', 'heartbleed', 'openSSLLuckyMinus20','commonNames']
+    interesting_tests = ['poodle', 'poodleTls', 'supportsRc4', 'vulnBeast', 'logjam', 'heartbleed', 'openSSLLuckyMinus20']
     while results['status'] != 'READY' and results['status'] != 'ERROR':
         time.sleep(30)
         results = sendReq(payload)
