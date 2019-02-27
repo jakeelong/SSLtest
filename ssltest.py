@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-# inspired by 'TrullJ'
-__author__ = 'Prajwal Panchmahalkar'
+
+__author__ = '...'
 import sys
 import json
 import time
@@ -39,7 +39,7 @@ def scanHost(host):
 
 if __name__ == '__main__':
     if(len(sys.argv) != 2):
-        print 'SSLtest, %s\n\t[!] Usage eg.: python %s www.google.com' % (__author__, __file__)
+        print 'Usage eg.: python ssltest.py <url>' (__author__, __file__)
         exit()
     output = 'json'  # Optional JSON output - leave blank for key/value pair.
     results = scanHost(sys.argv[1])
